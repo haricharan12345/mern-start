@@ -1,0 +1,29 @@
+{
+  "name": "mern-start",
+  "version": "1.0.0",
+  "description": "mern stack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend/server.js"
+  },
+  "type": "module",
+  "author": "hari",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/react": "^2.10.7",
+    "@emotion/styled": "^11.14.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "framer-motion": "^12.6.3",
+    "mongoose": "^8.13.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
